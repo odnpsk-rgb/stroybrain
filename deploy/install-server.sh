@@ -36,7 +36,7 @@ if [ ! -f .env ]; then
   echo ""
 fi
 
-npm ci
+npm install
 npm run build
 
 cat > /etc/systemd/system/stroybrain.service << 'EOF'
