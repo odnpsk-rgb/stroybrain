@@ -36,7 +36,8 @@ if [ ! -f .env ]; then
   echo ""
 fi
 
-npm install
+# devDependencies (vite) нужны только для сборки
+npm install --include=dev
 npm run build
 
 cat > /etc/systemd/system/stroybrain.service << 'EOF'

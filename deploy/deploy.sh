@@ -14,7 +14,7 @@ cd "$APP_DIR"
 git pull origin main
 
 echo "==> Зависимости и сборка..."
-npm install
+npm install --include=dev
 npm run build
 
 echo "==> Перезапуск сервиса..."
